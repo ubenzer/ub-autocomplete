@@ -5,26 +5,26 @@ A basic autocomplete library based on **Angular.js 1.4.x**
 [Click here to see it in action!](https://ubenzer.github.io/ub-autocomplete)
 
 ## How to setup
-1. Include `ubAutocomplete.js` in your web page after angular.js.
-  ```html
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-  <script src="lib/ubAutocomplete.js"></script>
-  ```
-2. If you don't want to customize the looks and want the defaults,
-   include `ubAutocomplete.css` in your page's header.
-   ```html
-     <link href="lib/ubAutocomplete.css" media="all" rel="stylesheet" />
-   ```
-3. Add dependency to the module named `ubAutocomplete`.
-    ```javascript
-     angular.module("your-app", ["ubAutocomplete"]);
-   ```
-4. Use it using `ub-autocomplete` in your html!
-  ```html
-  <ub-autocomplete
-    ng-model="demo.ac1"
-    source="demo.staticSourceDemo($keyword)"></ub-autocomplete>
-  ```
+Include `ubAutocomplete.js` in your web page after angular.js.
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="lib/ubAutocomplete.js"></script>
+```
+
+If you don't want to customize the looks and want the defaults, include `ubAutocomplete.css` in your page's header.
+```html
+<link href="lib/ubAutocomplete.css" media="all" rel="stylesheet" />
+```
+
+Add dependency to the module named `ubAutocomplete`.
+```javascript
+angular.module("your-app", ["ubAutocomplete"]);
+```
+
+Use it using `ub-autocomplete` in your html!
+```html
+<ub-autocomplete ng-model="demo.ac1" source="demo.staticSourceDemo($keyword)"></ub-autocomplete>
+```
 
 ## How to use
 All available attributes for this directive is used in the following example:
@@ -82,6 +82,7 @@ Async example:
 
 ## Running
 To run development web server type `npm start`
+
 To run tests type `npm test`
 
 ## Code Documentation

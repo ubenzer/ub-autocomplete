@@ -1,0 +1,18 @@
+<input
+  ng-blur="ac.inputBlur($event)"
+  ng-focus="ac.inputFocus()"
+  ng-keydown="ac.inputKeydown($event)"
+  type="text"
+  ng-change="ac.searchForSuggestions()"
+  ng-model="ac.inputValue">
+<div ng-show="ac.suggestionsVisible"
+     ng-class="{busy: ac.isBusy}"
+     class="autocomplete-suggestions">
+  <ul>
+    <li ng-click="ac.select(suggestion)"
+        ng-class="{active: ac.activeSuggestion === suggestion}"
+        ng-repeat="suggestion in ac.suggestions track by suggestion">
+      {{ ::suggestion }}
+    </li>
+  </ul>
+</div>

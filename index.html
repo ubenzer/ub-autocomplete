@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="ub-app">
+  <head>
+    <meta charset="utf-8">
+    <title>ub-autocomplete demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Demo of autocomplete component">
+    <meta name="author" content="Umut Benzer">
+    <link href="demo/demo.css" media="all" rel="stylesheet" />
+    <link href="lib/ubAutocomplete.css" media="all" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  </head>
+  <body ng-cloak ng-controller="Demo as demo">
+    <h1>ub-autocomplete Demo</h1>
+    <h2>simple autocomplete with static data</h2>
+    <pre>scope value: {{ demo.ac1 }}</pre>
+    <ub-autocomplete
+      ng-model="demo.ac1"
+      source="demo.staticSourceDemo($keyword)"></ub-autocomplete>    
+
+    <h2>advanced autocomplete with dynamic data, min-length before search, max suggestion limit and prefilled value and form validation support (ng-required)</h2>
+    <pre>scope value: {{ demo.ac2 }}</pre>
+    <ub-autocomplete
+      ng-model="demo.ac2"
+      ng-required="true"
+      min-length="3"
+      max-suggestions="10"
+      source="demo.dynamicSourceDemo($keyword)"></ub-autocomplete>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="demo/demo.js"></script>
+    <script src="lib/ubAutocomplete.js"></script>
+  </body>
+</html>

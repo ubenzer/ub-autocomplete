@@ -1,0 +1,44 @@
+/*
+  This styles are not required for ub-autocomplete to
+  function. These are only demo related.
+*/
+
+/* Add this to css, because we include angular.js at the bottom of the html. This'll prevent FOUC */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background: white;
+  color: rgb(76, 76, 76);
+  font-size: 16px;
+  padding: 20px;
+}
+
+h1 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 18px 0;
+}
+
+pre {
+  margin: 10px 0;
+  padding: 8px;
+}
+
+ub-autocomplete {
+  width: 400px;
+}

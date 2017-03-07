@@ -1,4 +1,6 @@
 # ub-autocomplete
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ubenzer/ub-autocomplete.svg)](https://greenkeeper.io/)
 A basic autocomplete library based on **Angular.js 1.4.x**
 
 ## Demo
